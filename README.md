@@ -1,81 +1,26 @@
-# Turborepo starter
+Welcome to `webhook.nu`, the open-source **webhook proxy service** designed to simplify your development and testing workflows. 
+Whether you're working with Stripe, Discord, Slack, or any service that uses webhooks, `webhook.nu` provides you with unique URLs to capture and inspect webhook requests. 
 
-This is an official starter Turborepo.
+Not only can you monitor the payloads you receive, but you can also **redirect them** to other URLs, including localhost, facilitating seamless integration and testing of your applications.
 
-## Using this example
+    This project is under development
 
-Run the following command:
+## Features
 
-```sh
-npx create-turbo@latest
-```
+- **Unique URL Generation**: Create unique endpoints to receive webhooks from any service.
+- **Payload Inspection**: View detailed information about the requests you receive, including headers, body, and query parameters.
+- **Request Redirection**: Forward received webhooks to other URLs, enabling easy testing of remote and local environments.
+- **Localhost Support**: Test webhooks locally by redirecting to localhost URLs, bypassing the need for tunneling services.
+- **User-Friendly Dashboard**: Manage your webhooks with ease through a simple and intuitive web interface.
 
-## What's inside?
+## Tech Stack
 
-This Turborepo includes the following packages/apps:
+`webhook.nu` is built with a robust tech stack designed for performance and scalability:
 
-### Apps and Packages
+- **Backend**: NestJS, Prisma, Supabase
+- **Frontend**: React
+- **Environment Validation**: Zod
+- **Monorepo Management**: Turborepo
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+## License
+`webhook.nu` is available under the MIT License.
