@@ -1,16 +1,13 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { ConfigModule } from '@nestjs/config';
-import { environments } from 'environment';
+import { ConfigurationModule } from 'src/configuration/configuration.module';
+import { WebhookModule } from 'src/webhook/webhook.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({
-    load: [environments],
-    isGlobal: true,
-    cache: true
-  }),],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [
+    ConfigurationModule,
+    WebhookModule,
+  ],
+  controllers: [],
+  providers: [],
 })
 export class AppModule { }
